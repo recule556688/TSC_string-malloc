@@ -1,4 +1,4 @@
-# Chaîne de charactère **``char*``** et **``malloc()``**
+# Chaîne de charactères **``char*``** et **``malloc()``**
 
 Bienvenue sur le repo TSC du cour sur les chaînes de charactères et la fonction malloc().
 
@@ -13,9 +13,9 @@ Le but de ce cour est de vous apprendre à manipuler les chaînes de charactère
 
 ## Introduction
 
-Dans ce cour nous allons revoir ce qu'est une chaine de charactère en C, comment en créer une et comment la manipuler.
+Dans ce cour nous allons revoir ce qu'est une chaine de charactères en C, comment en créer une et comment la manipuler.
 
-Dans un second temps nous allons voir comment créer une chaine de charactère dynamiquement avec la fonction malloc().
+Dans un second temps nous allons voir comment créer une chaine de charactères dynamiquement avec la fonction malloc().
 
 ## Les chaînes de charactères
 
