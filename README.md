@@ -41,8 +41,8 @@ Vous savez maintenant manipuler les chaînes de charactères en C et vous savez 
 
 - [Chaîne de charactères](./chaine_de_charactère.md)
 - [malloc()](./malloc.md)
+- [documentation malloc()](https://en.cppreference.com/w/c/memory/malloc)
 - [Exercices](./exercices.md)
-- [malloc()](https://en.cppreference.com/w/c/memory/malloc)
 - [Chaîne de charactères](https://learn.microsoft.com/fr-fr/cpp/c-language/c-string-literals?view=msvc-170)
 
 ## Auteur
