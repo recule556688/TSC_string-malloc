@@ -248,6 +248,44 @@ Le caractère ``'\v'`` est utilisé pour représenter une tabulation verticale.
 
 Ces caractères spéciaux sont utiles pour formater et structurer le texte dans les chaînes de caractères en C, que ce soit pour l'affichage à l'écran, le stockage de données ou d'autres opérations de traitement de texte.
 
+## Problèmes Courants et Bonnes Pratiques
+
+Lorsque vous travaillez avec des chaînes de caractères en C, plusieurs problèmes courants peuvent survenir. Il est important de comprendre ces problèmes et d'adopter des bonnes pratiques pour les éviter.
+
+### 1. Dépassement de Tableau
+
+L'un des problèmes les plus courants est le dépassement de tableau, qui se produit lorsque vous tentez de stocker plus de caractères dans une chaîne que ce que le tableau peut contenir. Cela peut entraîner des écritures en mémoire non allouée et des comportements indéfinis.
+
+Pour éviter les dépassements de tableau, assurez-vous de toujours allouer suffisamment de mémoire pour votre chaîne et de vérifier que vous ne stockez pas plus de caractères que ce que la mémoire peut contenir. Vous pouvez utiliser des fonctions telles que snprintf pour vous assurer que les données écrites dans la chaîne n'excèdent pas sa capacité.
+
+> Dans le cadre de votre Tek1 vous n'avez pas le droit d'utiliser la fonction ``snprintf``, je vous la présente à titre informatif.
+
+### 2. Erreurs de Segmentation
+
+Les erreurs de segmentation surviennent (``segmentation fault``) lorsque vous accédez à une zone de mémoire non allouée ou lorsque vous essayez d'accéder à une zone protégée de la mémoire. Cela peut se produire si vous tentez d'accéder à une chaîne en dehors de ses limites ou si vous accédez à un pointeur nul.
+
+Pour éviter les erreurs de segmentation, assurez-vous de toujours vérifier que les indices d'accès aux caractères dans une chaîne sont valides. De plus, veillez à initialiser correctement vos pointeurs pour éviter les pointeurs nuls.
+
+> Vous pouvez provoquer une erreur de segmentation en essayant d'accéder à un pointeur nul ou a un pointeur égale à 0.
+
+### 3. Caractères Spéciaux Non Échappés
+
+Lorsque vous incluez des caractères spéciaux tels que ``'\n'`` ou ``'\t'`` dans une chaîne de caractères, assurez-vous de les échapper correctement en utilisant un double backslash (``'\'``). Si vous oubliez de les échapper, cela peut entraîner des problèmes lors de la compilation ou de l'exécution de votre programme.
+
+### 4. Comparaison de Chaînes Sensible à la Casse
+
+Par défaut, la fonction ``strcmp`` de la bibliothèque ``<string.h>`` (et votre fonction ``my_strcmp``) effectue une comparaison sensible à la casse. Cela signifie qu'elle considère les lettres majuscules et minuscules comme différentes. Si vous avez besoin d'une comparaison insensible à la casse, vous devrez utiliser une fonction de comparaison personnalisée.
+
+### 5. Utilisation de Fonctions Non Sécurisées
+
+Certaines fonctions de manipulation de chaînes de caractères en C, telles que ``gets``, ``strcpy``, ``strcat``, sont considérées comme non sécurisées car elles ne vérifient pas les limites des tableaux. Il est recommandé d'utiliser les versions sécurisées de ces fonctions, telles que ``fgets``, ``strncpy``, ``strncat``, qui vous permettent de spécifier la taille maximale à copier.
+
+> Dans le cadre de votre Tek1 vous n'avez pas le droit d'utiliser les fonctions ``gets``, ``strcpy``, ``strcat``. Je vous les présente à titre informatif. Mais vous toujours toujours les recoder vous même ;).
+
+### 7. Utilisation des Fonctions de la Bibliothèque Standard
+
+Plutôt que de réinventer la roue, il est souvent préférable d'utiliser les fonctions de la bibliothèque standard C, comme ``strlen``, ``strcpy``, ``strcat``, ``strcmp``, pour effectuer des opérations sur les chaînes de caractères. Ces fonctions sont généralement plus sûres et plus efficaces que les implémentations personnalisées. Je vous conseil de les utiliser dès que vous aurez le droits d'utiliser les librairies standards.
+
 ## Conclusion
 
 Les chaînes de caractères en C sont un moyen important de travailler avec du texte. Vous pouvez les déclarer, les initialiser, les afficher, les manipuler et les modifier en utilisant le type ``char`` et les tableaux de caractères ``char[]``. Cependant, faites attention aux débordements de tableaux pour éviter les erreurs.
