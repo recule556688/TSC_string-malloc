@@ -234,6 +234,18 @@ Le caractère ``'\b'`` représente un retour arrière (backspace) et est utilis�
 
 C'est ce caractère qui est utilisé pour effacer un caractère dans un terminal.
 
+### 7. ``'\0'`` - Caractère de Fin de Chaîne
+
+Le caractère ``'\0'`` est utilisé pour indiquer la fin d'une chaîne de caractères. Il est automatiquement ajouté à la fin de chaque chaîne de caractères en C.
+
+### 8. ``'\a'`` - Bip
+
+Le caractère ``'\a'`` est utilisé pour produire un bip sonore.
+
+### 9. ``'\v'`` - Tabulation Verticale
+
+Le caractère ``'\v'`` est utilisé pour représenter une tabulation verticale.
+
 Ces caractères spéciaux sont utiles pour formater et structurer le texte dans les chaînes de caractères en C, que ce soit pour l'affichage à l'écran, le stockage de données ou d'autres opérations de traitement de texte.
 
 ## Conclusion
