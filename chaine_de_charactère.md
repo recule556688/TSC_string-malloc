@@ -1,4 +1,4 @@
-# Les chaînes de caractère
+# Les chaînes de caractères
 
 Une chaîne de caractères est une séquence de caractères qui représente du texte. En C, vous pouvez utiliser le type de données **``char``** et le tableau de caractères **``char[]``** pour stocker et manipuler des chaînes de caractères.
 
@@ -57,7 +57,7 @@ char deuxiemeCaractere = chaine[1]; // Accès au deuxième caractère 'e'
 
 ### 2. Parcours d'une Chaîne de Caractères
 
-Vous pouvez parcourir une chaîne caractère par caractère à l'aide d'une boucle for ou while. Par exemple :
+Vous pouvez parcourir une chaîne caractères par caractère à l'aide d'une boucle for ou while. Par exemple :
 
 ```c
 char chaine[] = "Bonjour";
@@ -70,7 +70,7 @@ for (int i = 0; i < longueur; i++) {
 
 > Cela affichera chaque caractère de la chaîne un par un.
 
-Comme nous l'avaons vu précédement une chaine de caractère se termine toujours par le caractère 0 ``\0``. Il n'est donc pas necessaire de connaitre la taille de la chaine pour la parcourir. Par exemple :
+Comme nous l'avaons vu précédement une chaine de caractères se termine toujours par le caractère 0 ``\0``. Il n'est donc pas necessaire de connaitre la taille de la chaine pour la parcourir. Par exemple :
 
 ```c
 char chaine[] = "Bonjour";
@@ -80,11 +80,11 @@ for (int i = 0; chaine[i] != '\0'; i++) {
 }
 ```
 
-> Dans cet exemple on parcourt la chaine de caractère jusqu'à ce qu'on arrive au caractère de fin de chaine ``\0``.
+> Dans cet exemple on parcourt la chaine de caractères jusqu'à ce qu'on arrive au caractère de fin de chaine ``\0``.
 
 ### 3. Modification d'une Chaîne de Caractères
 
-Pour modifier un caractère dans une chaîne, vous pouvez simplement utiliser l'indice _(avec les caractère ``[]``)_ pour accéder à l'élément et le modifier. Par exemple :
+Pour modifier un caractère dans une chaîne, vous pouvez simplement utiliser l'indice _(avec les caractères ``[]``)_ pour accéder à l'élément et le modifier. Par exemple :
 
 ```c
 char maChaine[] = "Bonjour";
