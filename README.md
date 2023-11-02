@@ -1,4 +1,4 @@
-# Chaîne de charactère (char*) et malloc()
+# Chaîne de charactère **``char*``** et **``malloc()``**
 
 Bienvenue sur le repo TSC du cour sur les chaînes de charactères et la fonction malloc().
 
