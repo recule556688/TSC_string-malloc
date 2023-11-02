@@ -9,7 +9,7 @@ Le but de ce cour est de vous apprendre à manipuler les chaînes de charactère
 - [Introduction](#introduction)
 - [Les chaînes de charactères](#les-chaînes-de-charactères)
 - [La fonction malloc()](#la-fonction-malloc)
-- [Exercices](#exercices)
+- [Ressources](#ressources)
 
 ## Introduction
 
@@ -37,7 +37,7 @@ Vous pouvez retrouver un cour complet sur la fonction malloc() [ici](./malloc.md
 
 Vous savez maintenant manipuler les chaînes de charactères en C et vous savez utiliser la fonction malloc().
 
-## Resources
+## Ressources
 
 - [Chaîne de charactères](./chaine_de_charactère.md)
 - [malloc()](./malloc.md)
@@ -47,4 +47,5 @@ Vous savez maintenant manipuler les chaînes de charactères en C et vous savez 
 
 ## Auteur
 
-- **[Baptiste Leroyer](https://github.com/ZiplEixels)** - _Travail initial_
+- **[Baptiste LEROYER](https://github.com/ZiplEixels)** - _Travail initial_
+- **[Arthur DELBARRE](https://github.com/ArthurDelbarre) - _Relecture_
