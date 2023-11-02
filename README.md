@@ -25,7 +25,7 @@ Vous pouvez retrouver un cour complet sur les chaînes de charactères [ici](./c
 
 ## La fonction malloc()
 
-La fonction malloc() permet d'allouer de la mémoire dynamiquement. Elle est très utilisée en C. Elle est déclarée dans le fichier d'en-tête stdlib.h. Elle prend en paramètre la taille de la mémoire à allouer en octets. Elle retourne un pointeur sur la mémoire allouée. Si la mémoire n'a pas pu être allouée, elle retourne NULL.
+La fonction ``malloc()`` permet d'allouer de la mémoire dynamiquement. Elle est très utilisée en C. Elle est déclarée dans le fichier d'en-tête ``<stdlib.h>``. Elle prend en paramètre la taille de la mémoire à allouer en octets. Elle retourne un pointeur sur la mémoire allouée. Si la mémoire n'a pas pu être allouée, elle retourne ``NULL``.
 
 ```c
 void *malloc(size_t taille);
