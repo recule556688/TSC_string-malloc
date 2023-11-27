@@ -280,7 +280,7 @@ Par défaut, la fonction ``strcmp`` de la bibliothèque ``<string.h>`` (et votre
 
 Certaines fonctions de manipulation de chaînes de caractères en C, telles que ``gets``, ``strcpy``, ``strcat``, sont considérées comme non sécurisées car elles ne vérifient pas les limites des tableaux. Il est recommandé d'utiliser les versions sécurisées de ces fonctions, telles que ``fgets``, ``strncpy``, ``strncat``, qui vous permettent de spécifier la taille maximale à copier.
 
-> Dans le cadre de votre Tek1 vous n'avez pas le droit d'utiliser les fonctions ``gets``, ``strcpy``, ``strcat``. Je vous les présente à titre informatif. Mais vous toujours toujours les recoder vous même ;).
+> Dans le cadre de votre Tek1 vous n'avez pas le droit d'utiliser les fonctions ``gets``, ``strcpy``, ``strcat``. Je vous les présente à titre informatif. Mais vous pouvez toujours les recoder vous-même ;).
 
 ### 7. Utilisation des Fonctions de la Bibliothèque Standard
 
