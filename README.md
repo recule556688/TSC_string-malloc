@@ -48,4 +48,4 @@ Vous savez maintenant manipuler les chaînes de charactères en C et vous savez 
 ## Auteur
 
 - **[Baptiste LEROYER](https://github.com/ZiplEixels)** - _Travail initial_
-- **[Arthur DELBARRE](https://github.com/ArthurDelbarre) - _Relecture_
+- **[Arthur DELBARRE](https://github.com/ArthurDelbarre)** - _Relecture_
